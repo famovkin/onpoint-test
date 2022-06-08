@@ -12,7 +12,7 @@ const Header = ({ slideIndex, changeSlideIndex }) => {
   };
 
   return (<div className="header">
-    <img className="header__home-icon" src={homeIcon} alt="Home" onClick={goHome}/>
+    <img className="header__home-icon" src={homeIcon} alt="Home" onClick={goHome} />
     <p className="header__project">Project</p>
   </div>);
 };

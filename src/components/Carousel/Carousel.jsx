@@ -2,8 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import './Carousel.css';
 
-const Carousel = ({ children }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+const Carousel = ({ children, slideIndex, changeSlideIndex }) => {
   const [length, setLength] = useState(children.length);
   const [startPosition, setStartPosition] = useState(null);
 
@@ -12,14 +11,14 @@ const Carousel = ({ children }) => {
   }, [children]);
 
   const goToNextSlide = () => {
-    if (currentIndex < (length - 1)) {
-      setCurrentIndex((prevState) => prevState + 1);
+    if (slideIndex < (length - 1)) {
+      changeSlideIndex((prevState) => prevState + 1);
     }
   };
 
   const goToPrevSlide = () => {
-    if (currentIndex > 0) {
-      setCurrentIndex((prevState) => prevState - 1);
+    if (slideIndex > 0) {
+      changeSlideIndex((prevState) => prevState - 1);
     }
   };
 
@@ -68,7 +67,7 @@ const Carousel = ({ children }) => {
       >
         <div
           className="carousel__content-container"
-          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          style={{ transform: `translateX(-${slideIndex * 100}%)` }}
         >
           {children}
         </div>
