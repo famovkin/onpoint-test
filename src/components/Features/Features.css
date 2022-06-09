@@ -1,0 +1,284 @@
+.features {
+  background-image: url('../../images/background-3.jpeg');
+  background-size: cover;
+  padding: 163px 71px 0px 0px;
+  position: relative;
+}
+
+.features__title {
+  font-size: 100px;
+  font-weight: 300;
+  font-family: 'Gilroy';
+  letter-spacing: 8px;
+  line-height: 1;
+  margin-bottom: 64px;
+  padding-left: 74px;
+}
+
+.features__title span {
+  font-weight: 700;
+}
+
+.features__subtitle {
+  text-transform: uppercase;
+  font-size: 26px;
+  letter-spacing: 2px;
+  line-height: 28px;
+  margin-bottom: 20px;
+  padding-left: 82px;
+}
+
+.features__mosaics {
+  display: flex;
+  gap: 30px;
+}
+
+.mosaic {
+  width: 100%;
+  position: relative;
+  padding: 51px 71px 41px 48px;
+  background-color: #fff;
+  border-radius: 50px;
+  font-size: 26px;
+  box-shadow: 5px 8px 233px 0px rgba(157, 185, 198, 0.39);
+}
+
+.mosaic_type_streched {
+  padding: 51px 40px 71px 79px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.mosaic__text {
+  position: relative;
+}
+
+.mosaic__image {
+  width: 65px;
+  position: absolute;
+  top: -75px;
+  left: 0;
+}
+
+.features__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.features__container {
+  position: relative;
+  margin-left: 270px;
+  max-width: 800px;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid red;
+}
+
+.features__bottle {
+  position: absolute;
+  width: 235px;
+  left: -222px;
+  top: -85px;
+  z-index: 1;
+}
+
+.features__bubble1 {
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  top: -86px;
+  left: -70px;
+  animation: bubble1-animation 6s ease-in-out infinite;
+}
+
+.features__bubble2 {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  top: 25px;
+  left: -75px;
+  z-index: 2;
+  animation: bubble2-animation 5s ease-in-out infinite;
+}
+
+.features__bubble3 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 52px;
+  left: -192px;
+  animation: bubble3-animation 9s ease-in-out infinite;
+}
+
+.features__bubble4 {
+  position: absolute;
+  width: 117px;
+  height: 117px;
+  top: 177px;
+  left: -77px;
+  animation: bubble4-animation 9s ease-in-out infinite;
+}
+
+.features__bubble5 {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  top: 310px;
+  left: -261px;
+  z-index: 2;
+  animation: bubble5-animation 6s ease-in-out infinite;
+}
+
+.features__bubble6 {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: 397px;
+  left: -231px;
+  z-index: 2;
+  animation: bubble6-animation 10s ease infinite;
+}
+
+.features__bubble7 {
+  position: absolute;
+  width: 82px;
+  height: 82px;
+  top: 429px;
+  left: -28px;
+  animation: bubble7-animation 9s ease-in-out infinite;
+}
+
+.features__bubble8 {
+  position: absolute;
+  width: 133px;
+  height: 133px;
+  top: 556px;
+  left: -53px;
+  z-index: 2;
+  animation: bubble8-animation 10s ease infinite;
+}
+
+@keyframes bubble1-animation {
+  0% {
+    transform: translate(10px, -10px);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(10px, -10px);
+  }
+}
+
+@keyframes bubble2-animation {
+  0% {
+    transform: translate(-20px, -20px);
+  }
+
+  50% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(-20px, -20px);
+  }
+}
+
+@keyframes bubble3-animation {
+  0% {
+    transform: translate(20px, 5px);
+  }
+
+  50% {
+    transform: translate(-10px, 0);
+  }
+
+  100% {
+    transform: translate(20px, 5px);
+  }
+}
+
+@keyframes bubble4-animation {
+  0% {
+    transform: translate(-20px, 0) scale(1);
+  }
+
+  25% {
+    transform: translate(10px, 15px) scale(1);
+  }
+
+  60% {
+    transform: translate(20px, 10px) scale(1.2);
+  }
+
+  100% {
+    transform: translate(-20px, 0) scale(1);
+  }
+}
+
+@keyframes bubble5-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(40px, 10px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes bubble6-animation {
+  0% {
+    transform: translate(-10px, 0) scale(1.2);
+  }
+
+  50% {
+    transform: translate(20px, 10px) scale(1);
+  }
+
+  100% {
+    transform: translate(-10px, 0) scale(1.2);
+  }
+}
+
+@keyframes bubble7-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  80% {
+    transform: translate(-20px, -30px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes bubble8-animation {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  50% {
+    transform: translate(-20px, -10px) scale(1.3);
+  }
+
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
