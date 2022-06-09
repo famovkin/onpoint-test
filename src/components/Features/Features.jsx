@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Button from '../ui/Button/Button.jsx';
 import Title from '../ui/Title/Title.jsx';
 import Subtitle from '../ui/Subtitle/Subtitle.jsx';
+import Popup from '../Popup/Popup.jsx';
+import Mosaic from '../ui/Mosaic/Mosaic.jsx';
+
+import getTotalPage from '../../utils/pages';
+import { ITEMS_ON_PAGE, featuresData } from '../../utils/constants';
 
 import calendar from '../../images/calendar.png';
 import plate from '../../images/plate.png';
@@ -30,43 +35,71 @@ const bubblesData = [
   { id: 8, file: bubble8 },
 ];
 
-const Features = () => (
-  <div className="features">
-    <div className="features__container">
-      <Subtitle mod="features__subtitle">Ключевое сообщение</Subtitle>
-      <Title mod="features__title">Brend<span>xy</span></Title>
-      <div className="features__mosaics">
-        <div className="mosaic mosaic_type_streched">
-          <p className="mosaic__text">
+const Features = () => {
+  const [page, setPage] = useState(1);
+  const [popup, setPopup] = useState(false);
+  const pagesArray = [];
+  const totalPages = getTotalPage(featuresData.length, ITEMS_ON_PAGE);
+
+  for (let i = 0; i < totalPages; i += 1) {
+    pagesArray.push(i + 1);
+  }
+
+  const goToNextPage = () => {
+    if (featuresData.length > page * ITEMS_ON_PAGE) {
+      setPage((prevState) => prevState + 1);
+    }
+  };
+
+  const goToPrevPage = () => {
+    if (page !== 1) {
+      setPage((prevState) => prevState - 1);
+    }
+  };
+
+  const openPopup = () => setPopup(true);
+  const closePopup = () => setPopup(false);
+
+  return (
+    <div className="features">
+      <div className="features__container">
+        <Subtitle mod="features__subtitle">Ключевое сообщение</Subtitle>
+        <Title mod="features__title">Brend<span>xy</span></Title>
+        <div className="features__mosaics">
+          <Mosaic>
             Ehicula ipsum a arcu cursus vitae. Eu non diam phasellus
             vestibulum lorem sed risus ultricies
             <img className="mosaic__image " src={plate} alt="Тарелка" />
-          </p>
-        </div>
-        <div className="features__column">
-          <div className="mosaic">
-            <p className="mosaic__text">
+          </Mosaic>
+          <div className="features__column">
+            <Mosaic>
               A arcu cursus vitae
               <img className="mosaic__image" src={calendar} alt="Календарь" />
-            </p>
+            </Mosaic>
+            <Button handler={openPopup} icon={plus}>Подробнее</Button>
           </div>
-          <Button icon={plus}>Подробнее</Button>
         </div>
-      </div>
-    {/* <div className="popup">
-      Popup
-    </div> */}
-      <img className="features__bottle" src={bottle} alt="Флакон" />
-      {bubblesData.map((bubble) => (
-        <img
-          className={`features__bubble${bubble.id}`}
-          key={bubble.id}
-          src={bubble.file}
-          alt="Пузырь"
+        <Popup
+          next={goToNextPage}
+          prev={goToPrevPage}
+          popup={popup}
+          page={page}
+          pagesArray={pagesArray}
+          closePopup={closePopup}
         />
-      ))}
+        <img className="features__bottle" src={bottle} alt="Флакон" />
+        {bubblesData.map((bubble) => (
+          <img
+            className={`features__bubble features__bubble_type_${bubble.id}`}
+            key={bubble.id}
+            src={bubble.file}
+            alt="Пузырь"
+          />
+        ))}
+      </div>
+      <div className={`features__overlay ${popup ? 'features__overlay_type_visible' : ''}`}></div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Features;

@@ -40,6 +40,7 @@
   position: absolute;
   width: 72px;
   height: 68px;
+  pointer-events: none;
 }
 
 .home__sphere_type_bottom {
@@ -73,7 +74,7 @@
   z-index: 1;
 }
 
-.home__large-sphere  {
+.home__large-sphere {
   position: absolute;
   width: 239px;
   height: 235px;

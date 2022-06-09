@@ -49,7 +49,7 @@ const Carousel = ({ children, slideIndex, changeSlideIndex }) => {
       goToNextSlide();
     }
 
-    if (diff < 5) {
+    if (diff < -1) {
       goToPrevSlide();
     }
 

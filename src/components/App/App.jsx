@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import Carousel from '../Carousel/Carousel.jsx';
 import Home from '../Home/Home.jsx';
+import Description from '../Description/Description.jsx';
+import Features from '../Features/Features.jsx';
 import Footer from '../Footer/Footer.jsx';
 import Header from '../Header/Header.jsx';
 
@@ -13,9 +15,9 @@ const App = () => {
   return (<div>
     <Header slideIndex={currentIndex} changeSlideIndex={setCurrentIndex} />
     <Carousel slideIndex={currentIndex} changeSlideIndex={setCurrentIndex}>
-      <Home />
-      <div style={{ background: 'blue' }}>Page 2</div>
-      <div style={{ background: 'green' }}>Page 3</div>
+      <Home changeSlideIndex={setCurrentIndex} />
+      <Description slideIndex={currentIndex} />
+      <Features />
     </Carousel>
     <Footer />
   </div>);

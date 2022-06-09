@@ -1,5 +1,5 @@
 .description {
-  background-image: url("../../images/background-2.jpeg");
+  background-image: url('../../images/background-2.jpeg');
   background-size: cover;
   padding: 130px 134px 0 70px;
   position: relative;
@@ -72,6 +72,7 @@
   position: absolute;
   transform: translate(100px, 100px);
   opacity: 0;
+  pointer-events: none;
 }
 
 .description__image_type_sp1 {
