@@ -1,6 +1,8 @@
 import React from 'react';
 
 import Button from '../ui/Button/Button.jsx';
+import Title from '../ui/Title/Title.jsx';
+import Subtitle from '../ui/Subtitle/Subtitle.jsx';
 
 import calendar from '../../images/calendar.png';
 import plate from '../../images/plate.png';
@@ -31,8 +33,8 @@ const bubblesData = [
 const Features = () => (
   <div className="features">
     <div className="features__container">
-      <p className="features__subtitle">Ключевое сообщение</p>
-      <h2 className="features__title">BREND<span>XY</span></h2>
+      <Subtitle mod="features__subtitle">Ключевое сообщение</Subtitle>
+      <Title mod="features__title">Brend<span>xy</span></Title>
       <div className="features__mosaics">
         <div className="mosaic mosaic_type_streched">
           <p className="mosaic__text">
