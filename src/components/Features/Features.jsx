@@ -66,7 +66,7 @@ const Features = () => {
         <Subtitle mod="features__subtitle">Ключевое сообщение</Subtitle>
         <Title mod="features__title">Brend<span>xy</span></Title>
         <div className="features__mosaics">
-          <Mosaic>
+          <Mosaic isStreched>
             Ehicula ipsum a arcu cursus vitae. Eu non diam phasellus
             vestibulum lorem sed risus ultricies
             <img className="mosaic__image " src={plate} alt="Тарелка" />
