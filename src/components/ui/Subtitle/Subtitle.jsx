@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import './Subtitle.css';
 
@@ -6,4 +6,4 @@ const Subtitle = ({ children, mod }) => (
   <p className={`subtitle ${mod}`}>{children}</p>
 );
 
-export default Subtitle;
+export default memo(Subtitle);

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import logo from '../../images/logo.svg';
 
@@ -12,4 +12,4 @@ const Footer = () => (
   </div>
 );
 
-export default Footer;
+export default memo(Footer);

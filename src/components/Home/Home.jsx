@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 
 import Button from '../ui/Button/Button.jsx';
 
@@ -10,10 +10,8 @@ import arrow from '../../images/right-arrow.svg';
 
 import './Home.css';
 
-const Home = ({ changeSlideIndex }) => {
-  const goToSecondSlide = () => changeSlideIndex(1);
-
-  return (<section className="home">
+const Home = ({ goToSecondSlide }) => (
+  <section className="home">
     <p className="home__subtitle">Привет,</p>
     <div className="home__container">
       <h1 className="home__title">
@@ -26,7 +24,7 @@ const Home = ({ changeSlideIndex }) => {
     <img className="home__sphere home__sphere_type_top" src={sphere} alt="Blue sphere" />
     <img className="home__thorn-sphere" src={thornSphere} alt="Sphere with throns" />
     <img className="home__large-sphere" src={sphereLarge} alt="Large sphere" />
-  </section>);
-};
+  </section>
+);
 
-export default Home;
+export default memo(Home);

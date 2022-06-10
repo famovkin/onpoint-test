@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 
 import Carousel from '../Carousel/Carousel.jsx';
 import Home from '../Home/Home.jsx';
@@ -12,10 +12,18 @@ import './App.css';
 const App = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const goHome = () => {
+    if (currentIndex !== 0) {
+      setCurrentIndex(0);
+    }
+  };
+
+  const goToSecondSlide = useCallback(() => setCurrentIndex(1), []);
+
   return (<div>
-    <Header slideIndex={currentIndex} changeSlideIndex={setCurrentIndex} />
+    <Header goHome={goHome}/>
     <Carousel slideIndex={currentIndex} changeSlideIndex={setCurrentIndex}>
-      <Home changeSlideIndex={setCurrentIndex} />
+      <Home goToSecondSlide={goToSecondSlide} />
       <Description slideIndex={currentIndex} />
       <Features />
     </Carousel>

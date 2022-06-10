@@ -61,7 +61,7 @@ const Features = () => {
   const closePopup = () => setPopup(false);
 
   return (
-    <div className="features">
+    <section className="features">
       <div className="features__container">
         <Subtitle mod="features__subtitle">Ключевое сообщение</Subtitle>
         <Title mod="features__title">Brend<span>xy</span></Title>
@@ -98,7 +98,7 @@ const Features = () => {
         ))}
       </div>
       <div className={`features__overlay ${popup ? 'features__overlay_type_visible' : ''}`}></div>
-    </div>
+    </section>
   );
 };
 
