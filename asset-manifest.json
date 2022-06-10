@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/onpoint-test/static/css/main.ad3aed84.css",
+    "main.js": "/onpoint-test/static/js/main.4a9945d8.js",
+    "static/media/bottle.png": "/onpoint-test/static/media/bottle.80c61a8f19bec3a42f1f.png",
+    "static/media/background-2.jpeg": "/onpoint-test/static/media/background-2.8d2cfba60dd3a0fa3ad0.jpeg",
+    "static/media/sphere-large.png": "/onpoint-test/static/media/sphere-large.6ab1f92d5b4beba6c2d0.png",
+    "static/media/background-3.jpeg": "/onpoint-test/static/media/background-3.de3fd2ee5dd9e5ca81fe.jpeg",
+    "static/media/sp-image1.png": "/onpoint-test/static/media/sp-image1.cb4b0c15d60405a414dc.png",
+    "static/media/background-1.jpeg": "/onpoint-test/static/media/background-1.d6eda36341e9d148fc20.jpeg",
+    "static/media/sp-image2.png": "/onpoint-test/static/media/sp-image2.25f9fc90ea5e26ac88b5.png",
+    "static/media/sp-image4.png": "/onpoint-test/static/media/sp-image4.338056e53da97a428677.png",
+    "static/media/DINPro-Regular.woff2": "/onpoint-test/static/media/DINPro-Regular.560be2f6f935581d7d62.woff2",
+    "static/media/pink-sperm.png": "/onpoint-test/static/media/pink-sperm.e2399d756db6a5ba9e5b.png",
+    "static/media/DINPro-Bold.woff2": "/onpoint-test/static/media/DINPro-Bold.1db735ab632d30e6be91.woff2",
+    "static/media/sphere-with-thorns.png": "/onpoint-test/static/media/sphere-with-thorns.6654cf7c59ac11cd44c4.png",
+    "static/media/Gilroy-Bold.woff2": "/onpoint-test/static/media/Gilroy-Bold.ef7c40ff1efeaaa4c7c6.woff2",
+    "static/media/Gilroy-Light.woff2": "/onpoint-test/static/media/Gilroy-Light.c2e7a6dc47e5b9a89a37.woff2",
+    "static/media/Gilroy-Extrabold.woff2": "/onpoint-test/static/media/Gilroy-Extrabold.5c5942d3e4d9a9645df4.woff2",
+    "static/media/bubble8.png": "/onpoint-test/static/media/bubble8.5157943058a45ac8458c.png",
+    "static/media/bubble4.png": "/onpoint-test/static/media/bubble4.b1537e1628ce7be39b6a.png",
+    "static/media/sp-image3.png": "/onpoint-test/static/media/sp-image3.c5c54e8914935ea0c6f1.png",
+    "static/media/sphere.png": "/onpoint-test/static/media/sphere.0bf4b89e86e4f959b8e0.png",
+    "static/media/sp-image5.png": "/onpoint-test/static/media/sp-image5.1f6e0f111bfc4efe5deb.png",
+    "static/media/logo.svg": "/onpoint-test/static/media/logo.407a9e1c9abb89c62f37f5fb7e6922a9.svg",
+    "static/media/right-arrow.svg": "/onpoint-test/static/media/right-arrow.4c336e51bafebdb11e930efa007d407c.svg",
+    "static/media/home.svg": "/onpoint-test/static/media/home.6194b80889b6d168b9f7e45a3514e8b2.svg",
+    "static/media/close-btn.svg": "/onpoint-test/static/media/close-btn.43acac53cb85a6489dbf8cf3109f8021.svg",
+    "index.html": "/onpoint-test/index.html",
+    "static/media/arrow.svg": "/onpoint-test/static/media/arrow.a98065462c1e98295a8f35c0c4c9c8f9.svg",
+    "static/media/plus.svg": "/onpoint-test/static/media/plus.a9b9088af0c177d532c696483ea64d3c.svg",
+    "main.ad3aed84.css.map": "/onpoint-test/static/css/main.ad3aed84.css.map",
+    "main.4a9945d8.js.map": "/onpoint-test/static/js/main.4a9945d8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ad3aed84.css",
+    "static/js/main.4a9945d8.js"
+  ]
+}
